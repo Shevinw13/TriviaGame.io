@@ -10,4 +10,3 @@
 
 * Don't forget to include a countdown timer.
 
-### Option Two: Advanced Assignment (Timed Questions)
