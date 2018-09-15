@@ -1,0 +1,19 @@
+.jumbotron {
+    margin-top: 100px;
+    background-image: url("background.png");
+}
+.title {
+    color:white;
+    text-align: center;
+    font-weight: bold;
+}
+.body {
+    background-color: rgb(15, 3, 97);
+}
+#display {
+    color: red;
+    text-align: center;
+}
+.row1 {
+    color:white;
+}
