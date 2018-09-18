@@ -17,91 +17,60 @@
     <div class="container">
         <div class="jumbotron">
             <h1 class="title">Atlanta Sports Quiz</h1>
-            <br> 
+            <br>
             <div id="display"></div>
-            <br> 
-            <div class="container">
-                <div class="q1">
-                    <div class="row1">
-                        <div class="col-lg-12 text-center">
-                            <h3>Q1: Who is the Atlanta United's leading scorer?</h3>
-                            <div id="quiz">
-                                <div id="question">
-                                    <div id="questions">
-                                        <label id="a1"><input type="radio" value="a">Miguel Almoron </label>
-                                        <label id="b1"><input type="radio" value="b">Brad Guzan </label>
-                                        <label id="c1"><input type="radio" value="c">E. Barco </label>
-                                        <label id="d1"><input type="radio" value="d">Josef Martinez </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <br> <br>
-                                <div class="q2">
-                                    <div class="row2">
-                                        <div class="col-lg-12 text-center">
-                                            <h3>Q2: What is the name of the Atlanta professional baseball team?</h3>
-                                            <div id="quiz">
-                                                <div id="question">
-                                                    <div id="questions">
-                                                        <label id="a2"><input type="radio" value="a">Falcons </label>
-                                                        <label id="b2"><input type="radio" value="b">Thrashers </label>
-                                                        <label id="c2"><input type="radio" value="c">Braves </label>
-                                                        <label id="d2"><input type="radio" value="d">Hawks </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <br> <br>
-                                            <div class="q3">
-                                                <div class="row2">
-                                                    <div class="col-lg-12 text-center">
-                                                        <h3>Q3: Who is the starting QB for the Atlanta Falcons? </h3>
-                                                        <div id="quiz">
-                                                            <div id="question">
-                                                                <div id="questions">
-                                                                    <label id="a3"><input type="radio" value="a">Julio Jones</label>
-                                                                    <label id="b3"><input type="radio" value="b">Matt Ryan</label>
-                                                                    <label id="c3"><input type="radio" value="c">Aaron Rodgers </label>
-                                                                    <label id="d3"><input type="radio" value="d">Keanu Neal </label>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <br> <br>
-                                                        <div class="q4">
-                                                            <div class="row2">
-                                                                <div class="col-lg-12 text-center">
-                                                                    <h3>Q4: Who was the Hawks first pick in this years NBA draft? </h3>
-                                                                    <div id="quiz">
-                                                                        <div id="question">
-                                                           <div id="questions">
-                                                            <label id="a4"><input type="radio" value="a">Omari Spellman</label>
-                                                                   <label id="b4"><input type="radio" value="b">Trae Young</label>
-                                                                 <label id="c4"><input type="radio" value="c">Kent Bazemore </label>
-                                                                   <label id="d4"><input type="radio" value="d">John Collins </label>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <br> <br>
-                                            <button type="button" class="btn btn-primary">Submit</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- /.row -->
-
-                            </div>
-                        </div>
-                    </div>
+            <br>
 
 
-                    <!-- Optional JavaScript -->
-                    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-                    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-                        crossorigin="anonymous"></script>
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-                        crossorigin="anonymous"></script>
-                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-                        crossorigin="anonymous"></script>
-                    <script src="assets/javascript/app.js"></script>
+            <li>
+                <div class="question">Q1: Who is the Atlanta United's leading scorer?</div>
+            </li>
+            <div class="answer1">
+                <input id="answer" type="radio" name="group1" value="wrong"> Brad Guzan<br>
+                <input id="answer" type="radio" name="group1" value="wrong"> Miguel Almeron<br>
+                <input id="answer" type="radio" name="group1" value="correct"> Josef Martinez
+                <hr>
+            </div>
+
+            <li>
+                <div class="question">Q2: What is the name of the Atlanta professional baseball team?</div>
+            </li>
+            <div class="answer2">
+                <input id="answer" type="radio" name="group2" value="wrong">Atlanta Falcons<br>
+                <input id="answer" type="radio" name="group2" value="wrong">Atlanta Dream<br>
+                <input id="answer" type="radio" name="group2" value="correct">Atlanta Braves
+                <hr>
+            </div>
+
+            <li>
+                <div class="question">Q3: Who is the starting QB for the Atlanta Falcons?</div>
+            </li>
+            <div class="answer3">
+                <input id="answer" type="radio" name="group3" value="wrong">Tevin Coleman<br>
+                <input id="answer" type="radio" name="group3" value="wrong"> Matt Bryant<br>
+                <input id="answer" type="radio" name="group3" value="correct">Matt Ryan
+                <hr>
+            </div>
+            <br>
+            <button class="submit" type="submit">Submit</button>
+            <button class="restart" type="submit">Restart</button>
+            </form>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="assets/javascript/app.js"></script>
 </body>
+
 </body>
 
 </html>

@@ -8,17 +8,31 @@ function countdown() {
         clearTimeout(timerId);
         timesUp();
     } else {
-        timer.innerHTML ="00:" + timeLeft + " seconds remaining";
+        timer.innerHTML = timeLeft + " seconds remaining";
         timeLeft--;
     }
 };
 function timesUp() {
     alert("Times up!");
+    location.reload();
 }
 
+$(".submit").on("click",function() {
+    var amountCorrect = 0;
+    for (var i = 1; i <= 45; i++) {
+        var radios = document.getElementsByName('group' + i);
+        for (var j = 0; j < radios.length; j++) {
+            var radio = radios[j];
+            if (radio.value == "correct" && radio.checked) {
+                amountCorrect++;
+            }
+        }
+    }
+    $(".restart").show();
+    $(".submit").hide();
+    alert("Correct Answers: " + amountCorrect + " out of 3");
+});
 
-//start at 30
-    //Display at 00:30, how do I make the timeLeft, which is a number, equal to the string of the display?
-//count down by one increments of a second
-//when the timer hits 0, alerts Times up!
-
+$(".restart").on("click",function() {
+    location.reload();
+});

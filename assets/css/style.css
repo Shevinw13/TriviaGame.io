@@ -1,5 +1,8 @@
 .jumbotron {
     margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
     background-image: url("background.png");
 }
 .title {
@@ -14,6 +17,34 @@
     color: red;
     text-align: center;
 }
-.row1 {
+.question {
     color:white;
+    text-align: center;
 }
+.answer1 {
+    color:white;
+    text-align: center;
+}
+.answer2 {
+    color:white;
+    text-align: center;
+}
+.answer3 {
+    color:white;
+    text-align: center;
+}
+.submit {
+    display: block;
+    margin: 0 auto;
+    background-color: red;
+    font-size: 16px;
+}
+
+.restart {
+    display: block;
+    margin: 0 auto;
+    background-color: red;
+    font-size: 16px;
+    display: none; 
+}
+
